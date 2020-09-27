@@ -3,15 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://timothyhyndman.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://timothyhyndman.github.io/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>https://timothyhyndman.github.io/tags/</loc>
+    <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
   </url>
   
 </urlset>
