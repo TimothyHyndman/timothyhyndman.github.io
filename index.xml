@@ -5,10 +5,6 @@
     <link>/</link>
     <description>Recent content on Timothy Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-uk</language>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-uk</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
