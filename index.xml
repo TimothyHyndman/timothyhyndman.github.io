@@ -5,6 +5,20 @@
     <link>/</link>
     <description>Recent content on Timothy Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-uk</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 07 Apr 2023 16:33:09 +1000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a tictactoe AI using reinforcement learning</title>
+      <link>/tictactoe_ai/</link>
+      <pubDate>Fri, 07 Apr 2023 16:33:09 +1000</pubDate>
+      
+      <guid>/tictactoe_ai/</guid>
+      <description>Play the AI You can use the board below to play a game of Tic Tac Toe against an AI that I have trained using reinforcement learning. To make a move, simply click on one of the squares.</description>
+    </item>
+    
   </channel>
 </rss>
