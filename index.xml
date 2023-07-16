@@ -17,7 +17,7 @@
       <pubDate>Fri, 07 Apr 2023 16:33:09 +1000</pubDate>
       
       <guid>/tictactoe_ai/</guid>
-      <description>Play the AI You can use the board below to play a game of Tic Tac Toe against an AI that I have trained using reinforcement learning. To make a move, simply click on one of the squares.</description>
+      <description>Introduction I have been wanting to teach myself about &amp;ldquo;Deep Q-Learning&amp;rdquo; for a while, and I thought tic-tac-toe was the perfect toy problem to start with. Tic-tac-toe is particularly friendly because:</description>
     </item>
     
   </channel>
