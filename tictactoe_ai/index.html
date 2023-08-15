@@ -7,14 +7,15 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Timothy Hyndman">
-  <meta name="description" content="Introduction I have been wanting to teach myself about &ldquo;Deep Q-Learning&rdquo; for a while, and I thought tic-tac-toe was the perfect toy problem to start with. Tic-tac-toe is particularly friendly because:">
+  <meta name="description" content="Play the AI You can use the board below to play a game of Tic Tac Toe against an AI that I have trained using reinforcement learning. To make a move, simply click on one of the squares.">
   
   <meta property="og:title" content="Building a tictactoe AI using reinforcement learning" />
-<meta property="og:description" content="Introduction I have been wanting to teach myself about &ldquo;Deep Q-Learning&rdquo; for a while, and I thought tic-tac-toe was the perfect toy problem to start with. Tic-tac-toe is particularly friendly because:" />
+<meta property="og:description" content="Play the AI You can use the board below to play a game of Tic Tac Toe against an AI that I have trained using reinforcement learning. To make a move, simply click on one of the squares." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/tictactoe_ai/" />
+<meta property="og:url" content="/tictactoe_ai/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2023-04-07T16:33:09+10:00" />
 <meta property="article:modified_time" content="2023-04-07T16:33:09+10:00" />
+
 
 
   <title>
@@ -283,16 +284,8 @@
 
 
           <div class="post-content markdown">
-            <h2 id="introduction">Introduction</h2>
-<p>I have been wanting to teach myself about &ldquo;Deep Q-Learning&rdquo; for a while, and I thought tic-tac-toe was the perfect toy problem to start with. Tic-tac-toe is particularly friendly because:</p>
-<ul>
-<li>It is easy as a human to evaluate if the AI is playing optimally.</li>
-<li>There are only 5477 possible board states, so the AI will most likely see almost all of the states during training.</li>
-</ul>
-<p>This second point is particularly useful because we don&rsquo;t have to worry about overfitting - it doesn&rsquo;t matter if the AI memorises the correct response to every possible board, because there&rsquo;s nothing outside the training data that it needs to generalise to.</p>
-<h2 id="try-it-out">Try it out</h2>
-<p>To get the details on how the AI was trained you can <a href="https://github.com/TimothyHyndman/tictactoe">view my code</a> on github.</p>
-<p>You can play the AI for yourself below. To make a move, simply click on one of the squares. The AI will then make its move, and the game will continue until one player wins or the game ends in a draw.</p>
+            <h2 id="play-the-ai">Play the AI</h2>
+<p>You can use the board below to play a game of Tic Tac Toe against an AI that I have trained using reinforcement learning. To make a move, simply click on one of the squares. The AI will then make its move, and the game will continue until one player wins or the game ends in a tie.</p>
 <head>
     <link rel="stylesheet" href='/tictactoe/static/css/main.css' />
     <!-- Import TensorFlow.js -->
@@ -320,10 +313,6 @@
         <button class="restart">Play again</button>
     </div>
 </body>
-<h2 id="details">Details</h2>
-<p>The AI above uses a fully connected Neural Network with 3 hidden layers of 64 neurons each. The input to this network is the board state, and the output is 9 neurons representing a probability distribution of moves to play (one neuron for each square). The AI can play by either sampling the moves according to the calculated probability, or by choosing the highest probability move. I use the latter above, and the former when training.</p>
-<p>Training is done in sets of 250 games each, with the AI playing an even mix of games as &lsquo;X&rsquo; and &lsquo;O&rsquo; against itself. After each set of games, the neural network is updated using training data from the last 5000 games.</p>
-<p>A very rough evaluation of the quality of the AI is calculated by playing 400 games against a player who chooses moves uniformly at random, and then calculating the percentage of games won out of all games that weren&rsquo;t drawn. The above AI reached a win-percentage of 100%.</p>
 
           </div>
 
